@@ -6,7 +6,7 @@
 /*   By: lgarfi <lgarfi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 20:12:25 by garfi             #+#    #+#             */
-/*   Updated: 2024/02/23 20:34:27 by lgarfi           ###   ########.fr       */
+/*   Updated: 2023/11/19 18:02:34 by lgarfi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,18 +88,18 @@ char	*get_line_res(char **line_static)
 	return (res);
 }
 
-int main()
-{
-	int	fd = open("test", O_RDONLY);
-	char	*a;
+// int main()
+// {
+// 	// int	fd = open("test", O_RDONLY);
+// 	char	*a;
 
-	while (1)
-	{
-		a = get_next_line(fd);
-		if (!a)
-			break;
-		printf("|%s|", a);
-		free (a);
-	}
-	return (0);
-}
+// 	while (1)
+// 	{
+// 		a = get_next_line(-1);
+// 		if (!a)
+// 			break;
+// 		printf("|%s|", a);
+// 		free (a);
+// 	}
+// 	return (0);
+// }
